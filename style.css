@@ -1542,6 +1542,14 @@ h1, h2, h3, h4, h5, h6 {
    Contact — Desktop luxe (min 769px)
 ================================ */
 @media (min-width: 769px) {
+    .date-hint {
+        display: none;
+    }
+
+    input[type="date"] {
+        color: var(--color-text);
+    }
+
     .contact {
         background: var(--color-background-alt);
     }
@@ -1580,14 +1588,37 @@ h1, h2, h3, h4, h5, h6 {
     input[type="date"] {
         min-width: 0;
         width: 100%;
+        color: transparent;
     }
 
-    input[type="date"]::-webkit-datetime-edit {
+    input[type="date"].has-value {
         color: var(--color-text);
     }
 
-    input[type="date"]::-webkit-datetime-edit-fields-wrapper {
-        padding: 0;
+    input[type="date"]::-webkit-datetime-edit {
+        color: transparent;
+    }
+
+    input[type="date"].has-value::-webkit-datetime-edit {
+        color: var(--color-text);
+    }
+
+    .form__group--date {
+        position: relative;
+    }
+
+    .date-hint {
+        position: absolute;
+        left: 0.85rem;
+        top: calc(1.5rem + 0.7rem + 0.7rem);
+        color: var(--color-text-muted);
+        font-size: 0.95rem;
+        pointer-events: none;
+        font-family: var(--font-body);
+    }
+
+    .date-hint.hidden {
+        display: none;
     }
 
     .nav__toggle {

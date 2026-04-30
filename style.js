@@ -277,7 +277,27 @@ const ReservationForm = {
         this.newReservationBtn = document.getElementById('new-reservation');
 
         this.setMinDate();
+        this.initDateHint();
         this.bindEvents();
+    },
+
+    initDateHint() {
+        const dateInput = document.getElementById('date');
+        const hint = document.querySelector('.date-hint');
+        if (!dateInput || !hint) return;
+
+        const update = () => {
+            if (dateInput.value) {
+                dateInput.classList.add('has-value');
+                hint.classList.add('hidden');
+            } else {
+                dateInput.classList.remove('has-value');
+                hint.classList.remove('hidden');
+            }
+        };
+
+        dateInput.addEventListener('change', update);
+        update();
     },
 
     setMinDate() {
