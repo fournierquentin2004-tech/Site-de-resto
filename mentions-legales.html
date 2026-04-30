@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions légales | La Table d'Or</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .legal-page {
+            padding-top: calc(var(--header-height) + var(--space-2xl));
+            padding-bottom: var(--space-2xl);
+            min-height: 100vh;
+        }
+        .legal-page h1 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: var(--space-xl);
+            color: var(--color-secondary);
+        }
+        .legal-section {
+            margin-bottom: var(--space-xl);
+        }
+        .legal-section h2 {
+            font-size: 1.3rem;
+            color: var(--color-secondary);
+            margin-bottom: var(--space-sm);
+            padding-bottom: var(--space-xs);
+            border-bottom: 2px solid var(--color-primary);
+        }
+        .legal-section p, .legal-section li {
+            color: var(--color-text-light);
+            line-height: 1.8;
+            margin-bottom: var(--space-xs);
+        }
+        .legal-section ul {
+            list-style: disc;
+            padding-left: var(--space-lg);
+        }
+        .placeholder {
+            background: var(--color-background-alt);
+            border: 1px dashed var(--color-border);
+            border-radius: var(--radius-sm);
+            padding: var(--space-xs) var(--space-sm);
+            color: var(--color-text-muted);
+            font-style: italic;
+            display: inline-block;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-primary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: var(--space-xl);
+            transition: gap var(--transition);
+        }
+        .back-link:hover { gap: 0.75rem; }
+    </style>
+</head>
+<body>
+
+    <header class="header scrolled" id="header">
+        <nav class="nav container">
+            <a href="style.html" class="nav__logo">La Table d'Or</a>
+        </nav>
+    </header>
+
+    <main class="legal-page">
+        <div class="container">
+            <a href="style.html" class="back-link">← Retour au site</a>
+            <h1>Mentions légales</h1>
+
+            <div class="legal-section">
+                <h2>1. Éditeur du site</h2>
+                <p>Le présent site est édité par :</p>
+                <ul>
+                    <li><strong>Raison sociale :</strong> <span class="placeholder">À compléter (ex : SAS La Table d'Or)</span></li>
+                    <li><strong>Forme juridique :</strong> <span class="placeholder">À compléter (ex : SAS, SARL…)</span></li>
+                    <li><strong>Capital social :</strong> <span class="placeholder">À compléter</span></li>
+                    <li><strong>Numéro SIRET :</strong> <span class="placeholder">À compléter</span></li>
+                    <li><strong>Numéro RCS :</strong> <span class="placeholder">À compléter</span></li>
+                    <li><strong>Numéro TVA intracommunautaire :</strong> <span class="placeholder">À compléter</span></li>
+                    <li><strong>Siège social :</strong> 15 Avenue des Champs-Élysées, 75008 Paris, France</li>
+                    <li><strong>Téléphone :</strong> +33 1 42 56 78 90</li>
+                    <li><strong>Email :</strong> contact@latabledorparis.fr</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>2. Directeur de la publication</h2>
+                <p><span class="placeholder">À compléter (Nom et prénom du directeur de publication)</span></p>
+            </div>
+
+            <div class="legal-section">
+                <h2>3. Hébergement</h2>
+                <p>Le site est hébergé par :</p>
+                <ul>
+                    <li><strong>Hébergeur :</strong> <span class="placeholder">À compléter (ex : Netlify, OVH…)</span></li>
+                    <li><strong>Adresse :</strong> <span class="placeholder">À compléter</span></li>
+                    <li><strong>Site web :</strong> <span class="placeholder">À compléter</span></li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>4. Propriété intellectuelle</h2>
+                <p>L'ensemble du contenu de ce site (textes, images, graphismes, logo, icônes, sons, logiciels…) est la propriété exclusive de La Table d'Or ou de ses partenaires, et est protégé par les lois françaises et internationales relatives à la propriété intellectuelle.</p>
+                <p>Toute reproduction, représentation, modification, publication, transmission ou dénaturation, totale ou partielle, du site ou de son contenu, par quelque procédé que ce soit, et sur quelque support que ce soit, est interdite sans l'autorisation préalable et écrite de La Table d'Or.</p>
+                <p>Les photographies utilisées sur ce site proviennent de la banque d'images Unsplash et sont soumises à la licence Unsplash (libre d'utilisation).</p>
+            </div>
+
+            <div class="legal-section">
+                <h2>5. Responsabilité</h2>
+                <p>La Table d'Or s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur ce site. Toutefois, La Table d'Or ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations mises à disposition.</p>
+                <p>En conséquence, La Table d'Or décline toute responsabilité pour toute imprécision, inexactitude ou omission portant sur des informations disponibles sur ce site.</p>
+            </div>
+
+            <div class="legal-section">
+                <h2>6. Liens hypertextes</h2>
+                <p>Le site peut contenir des liens hypertextes vers d'autres sites internet. La Table d'Or n'exerce aucun contrôle sur ces sites et n'assume aucune responsabilité quant à leur contenu.</p>
+            </div>
+
+            <div class="legal-section">
+                <h2>7. Droit applicable</h2>
+                <p>Le présent site et les présentes mentions légales sont soumis au droit français. En cas de litige, les tribunaux français seront seuls compétents.</p>
+            </div>
+
+            <div class="legal-section">
+                <h2>8. Contact</h2>
+                <p>Pour toute question relative aux présentes mentions légales, vous pouvez nous contacter à l'adresse suivante : <a href="mailto:contact@latabledorparis.fr" style="color: var(--color-primary);">contact@latabledorparis.fr</a></p>
+            </div>
+
+            <p style="color: var(--color-text-muted); font-size: 0.85rem; margin-top: var(--space-xl);">Dernière mise à jour : <span class="placeholder">À compléter (ex : 29 avril 2026)</span></p>
+        </div>
+    </main>
+
+</body>
+</html>

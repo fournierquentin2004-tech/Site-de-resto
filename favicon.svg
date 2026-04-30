@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#f5d878"/>
+      <stop offset="40%"  stop-color="#c9a227"/>
+      <stop offset="100%" stop-color="#7a5c0a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fond cercle doré métallique -->
+  <circle cx="32" cy="32" r="32" fill="url(#gold)"/>
+
+  <!-- Assiette -->
+  <circle cx="32" cy="32" r="18" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="32" cy="32" r="13" fill="none" stroke="#ffffff" stroke-width="0.8" opacity="0.6"/>
+
+  <!-- Fourchette (gauche) -->
+  <g fill="#ffffff">
+    <rect x="23.5" y="35" width="2" height="12" rx="1"/>
+    <rect x="22" y="17" width="1.2" height="8" rx="0.6"/>
+    <rect x="24" y="17" width="1.2" height="8" rx="0.6"/>
+    <rect x="26" y="17" width="1.2" height="8" rx="0.6"/>
+    <path d="M22 25 Q24.5 28 24.5 30 L24.5 35 L23.5 35 L23.5 30 Q23.5 28 22 25Z"/>
+    <path d="M27.2 25 Q24.5 28 24.5 30 L24.5 35 L25.5 35 L25.5 30 Q25.5 28 27.2 25Z"/>
+  </g>
+
+  <!-- Couteau (droite) -->
+  <g fill="#ffffff">
+    <rect x="38.5" y="35" width="2" height="12" rx="1"/>
+    <path d="M38.5 17 L40.5 17 L41 25 Q41 30 39.5 32 L39.5 35 L38.5 35 L38.5 32 Q37.5 30 38 25 Z"/>
+  </g>
+</svg>
