@@ -1656,6 +1656,10 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 1.1rem;
     }
 
+    .nav__menu.open .nav__link {
+        color: #fff !important;
+    }
+
     .about__grid {
         grid-template-columns: 1fr;
     }
