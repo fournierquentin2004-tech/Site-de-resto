@@ -1660,6 +1660,10 @@ h1, h2, h3, h4, h5, h6 {
         color: #fff !important;
     }
 
+    .nav__toggle.open span {
+        background: #fff !important;
+    }
+
     .about__grid {
         grid-template-columns: 1fr;
     }
