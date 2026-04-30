@@ -54,6 +54,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: var(--header-height);
+    overflow-x: hidden;
 }
 
 body {
@@ -64,6 +65,11 @@ body {
     background-color: var(--color-background);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+a, button {
+    touch-action: manipulation;
 }
 
 img {
