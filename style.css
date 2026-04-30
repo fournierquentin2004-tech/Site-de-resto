@@ -1588,12 +1588,16 @@ h1, h2, h3, h4, h5, h6 {
     .date-wrapper {
         position: relative;
         width: 100%;
+        overflow: hidden;
     }
 
     input[type="date"] {
+        -webkit-appearance: none;
+        appearance: none;
         min-width: 0;
         width: 100%;
         max-width: 100%;
+        box-sizing: border-box;
         color: transparent;
     }
 
