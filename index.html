@@ -781,10 +781,12 @@
                             </div>
                         </div>
                         <div class="form__row">
-                            <div class="form__group form__group--date">
+                            <div class="form__group">
                                 <label for="date" class="form__label">Date *</label>
-                                <input type="date" id="date" name="date" class="form__input" required>
-                                <span class="date-hint" aria-hidden="true">jj/mm/aaaa</span>
+                                <div class="date-wrapper">
+                                    <input type="date" id="date" name="date" class="form__input" required>
+                                    <span class="date-hint" aria-hidden="true">jj/mm/aaaa</span>
+                                </div>
                                 <span class="form__error" id="date-error"></span>
                             </div>
                             <div class="form__group">

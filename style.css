@@ -1585,9 +1585,15 @@ h1, h2, h3, h4, h5, h6 {
    Responsive — Tablet (768px)
 ================================ */
 @media (max-width: 768px) {
+    .date-wrapper {
+        position: relative;
+        width: 100%;
+    }
+
     input[type="date"] {
         min-width: 0;
         width: 100%;
+        max-width: 100%;
         color: transparent;
     }
 
@@ -1603,14 +1609,11 @@ h1, h2, h3, h4, h5, h6 {
         color: var(--color-text);
     }
 
-    .form__group--date {
-        position: relative;
-    }
-
     .date-hint {
         position: absolute;
         left: 0.85rem;
-        top: calc(1.5rem + 0.7rem + 0.7rem);
+        top: 50%;
+        transform: translateY(-50%);
         color: var(--color-text-muted);
         font-size: 0.95rem;
         pointer-events: none;
