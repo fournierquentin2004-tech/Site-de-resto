@@ -481,6 +481,23 @@ const ReservationForm = {
             guestsCount === '1' ? '1 personne' : `${guestsCount} personnes`;
         document.getElementById('confirm-email').textContent = data.email;
 
+        // Save to localStorage for admin dashboard
+        const reservation = {
+            id: Date.now().toString(),
+            nom: data.name,
+            email: data.email,
+            tel: data.phone || '',
+            date: data.date,
+            dateFormatee: formattedDate,
+            heure: data.time,
+            couverts: guestsCount,
+            message: data.message || '',
+            createdAt: new Date().toISOString()
+        };
+        const existing = JSON.parse(localStorage.getItem('tabledor_reservations') || '[]');
+        existing.push(reservation);
+        localStorage.setItem('tabledor_reservations', JSON.stringify(existing));
+
         // Switch views
         this.form.hidden = true;
         this.confirmation.hidden = false;
